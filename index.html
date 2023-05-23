@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Form</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Upload Form Drivers License</h1>
+    </header>
+
+    <main>
+        <p>Help Homer Simpson upload his photo</p>
+
+        <form action="form.php" method="post" enctype="multipart/form-data">
+            <div>
+                <p>Name: </p>
+                <p>Homer Simpson</p>
+            </div>
+            <div>
+                <label for="birthDate">Birth date: </label>
+                <input type="date" id="birthDate" name="birthDate">
+            </div>
+            <div>
+                <p>Expires: </p>
+                <p>31/02/2100</p>
+            </div>
+            <div>
+                <label for="class">Class: </label>
+                <select id="class" name="class">
+                    <option value="">Choose an option</option>
+                    <option value="Locomotive">Locomotive</option>
+                    <option value="Raffale">Raffale</option>
+                    <option value="Mobility Scooter">Mobility Scooter</option>
+                    <option value="Hovercraft">Hovercraft</option>
+                    <option value="Lun-class ekranoplan">Lun-class ekranoplan</option>
+                </select>
+            </div>
+            <div>
+                <p>Address: </p>
+                <p>in the middle of nowhere</p>
+            </div>
+            <div>
+                <p>Town: </p>
+                <p>Springfield</p>
+            </div>
+            <div>
+                <p>ZIP code: </p>
+                <p>666</p>
+            </div>
+            <div>
+                <label for="sex">Sex: </label>
+                <select id="sex" name="sex">
+                    <option value="">Choose an option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="Not so often">Not so often</option>
+                    <option value="OK">OK</option>
+                    <option value="Undefined">Undefined</option>
+                    <option value="From time to time">From time to time</option>
+                </select>
+            </div>
+            <div>
+                <label for="height">Height: </label>
+                <select id="height" name="height">
+                    <option value="">Choose an option</option>
+                    <option value="Garden Gnome">Garden Gnome</option>
+                    <option value="Mediocre">Mediocre</option>
+                    <option value="Michael Jordan">Michael Jordan</option>
+                </select>
+            </div>
+            <div>
+                <label for="weight">Weight: </label>
+                <select id="weight" name="weight">
+                    <option value="">Choose an option</option>
+                    <option value="Unstable">Unstable</option>
+                    <option value="Progressing">Progressing</option>
+                    <option value="High level attained">High level attained</option>
+                </select>
+            </div>
+            <div>
+                <label for="hair">Hair: </label>
+                <select id="hair" name="hair">
+                    <option value="">Choose an option</option>
+                    <option value="Amazon rainforest">Amazon rainforest</option>
+                    <option value="Undefined">Undefined but on my way</option>
+                    <option value="Kojac">Kojac/Jason Statham</option>
+                </select>
+            </div>
+            <div>
+                <label for="eyes">Eyes: </label>
+                <select id="eyes" name="eyes">
+                    <option value="">Choose an option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="Two">Two</option>
+                    <option value="Blind as a bat">Blind as a bat</option>
+                </select>
+            </div>
+            <label for="imageUpload">Upload an profile image</label>
+            <input type="file" name="avatar" id="imageUpload" />
+            <button name="upload">Upload</button>
+        </form>
+    </main>
+</body>
+
+</html>
